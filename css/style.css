@@ -748,6 +748,43 @@ ul {
   border: none;
  }
 
+ .right .Contact form .subjects{
+  width: 100%;
+  margin: 25px 0;
+ }
+
+ .right .Contact form .subjects  {
+  width: 100%;
+
+}
+
+.right .Contact form .subjects  input {
+  width: 100%;
+  padding: 1rem 0;
+  background-color: #314355;
+  outline: none;
+  border: 0;
+  color: #eeeeee;
+  padding-left: 0.8rem;
+  font-size: 0.9rem;
+  background-color: #13202d;
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 20%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.right .Contact form .subjects  input::placeholder{
+  color: #eeeeee;
+  font-size: 0.9rem;
+  padding-left: -0.8rem;
+  transition: ease;
+}
+
+.right .Contact form .subjects input:focus {
+  outline: 4px solid #198754;
+  color: #eeeeee;
+  border: none;
+ }
+
 .right .Contact form .massage {
   width: 100%;
   margin: 25px 0;
