@@ -601,7 +601,7 @@ ul {
 .right .Services .service .ser h1 {
   text-align: center;
   font-size: 1rem;
-  margin: 25px 0;
+  margin: 20px 0;
   text-transform: uppercase;
   font-weight: 400;
 }
@@ -617,9 +617,9 @@ ul {
 .right .Services .service .ser:hover{
   background-color: #198754;
   color: #fff;
-  transform: scale(1.2);
+  transform: scale(1.1);
   z-index: 1;
-  /* text-shadow:2px 2px 5px #fff;  */
+  /* text-shadow:2px 2px 5px #000;  */
 }
 
 /* ------------------------- Services section ends here ------------------------ */
@@ -1003,9 +1003,9 @@ ul {
 
   
   .right .Services .service .ser{
-    width: 65%;
-    margin: 0 auto;
+    width: 48.5%;   
     margin-top: 20px;
+  
   }
 
   
@@ -1015,6 +1015,9 @@ ul {
     margin-top: -10px;
   }
 
+  .container .right {
+    padding: 0px 30px;   
+  }
  
  
 
@@ -1074,6 +1077,12 @@ ul {
     margin-top: 2.5rem;
   }
 
+
+  .right .Services .service .ser {
+    width: 80%;
+    margin: 10px auto;   
+  }
+
   .right .Portfolio .projects .mein-box{
     width: 65%;
     margin: 0 auto;
@@ -1099,6 +1108,10 @@ ul {
   margin-bottom: 15px;
 }
 
+.right .Contact form .subjects{
+  margin: 0px;
+  margin-bottom: 15px;
+}
 
 .right .Contact form .massage {
   width: 100%;
@@ -1125,15 +1138,33 @@ ul {
 
 .right .Services .service .ser {  
   width: 100%; 
+  
 }
 
 .right .Portfolio .projects .mein-box {
   width: 100%;
 }
-
-
   
 }
 
 
+@media only screen and (max-width:467px) {
+  .container .right {
+    padding: 0px 20px;
+}
+
+.right .Services .service .ser {
+  width: 100%;
+  padding: 0px;
+}
+
+.projects .web .img-overlay .box h2 {
+  font-size: 1.5rem;
+}
+
+.projects .web .img-overlay .box h1 {
+  font-size: 1rem;
+}
+
+}
 /*---------------------- Media quaries ends here ---------------*/
