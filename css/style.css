@@ -38,7 +38,7 @@ a:visited{
 }
 
 .fixed-width {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
  
 }
@@ -102,6 +102,7 @@ header nav ul li a {
   transition: all 0.3s ease;
   text-transform: uppercase;
   font-size: 0.9rem;
+  font-weight: 600;
 
 }
 
@@ -194,7 +195,7 @@ ul {
 
 
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   margin-top: 120px;
 }
@@ -203,7 +204,7 @@ ul {
 
 .container .leftfixed {
   position: fixed;
-  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 50%);
   text-align: center;
   max-width: 300px;
   padding-bottom: 1.2rem;
@@ -327,14 +328,11 @@ ul {
 
 .container .right {
   width: 80%;
-  margin-left: 30%;
+  margin-left: 26%;
   box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
-  padding: 10px;
+  padding: 0px 50px;
   position: relative;
   background-color: #13202d;
-
-
-
 
 }
 
@@ -450,6 +448,7 @@ ul {
 .Skills .personal-skills .skill .pro h1 {
   font-size: 0.9rem;
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 .Skills .personal-skills .skill .pro .progress-html {
@@ -484,9 +483,22 @@ ul {
 
 .Skills .personal-skills .skill .pro .progress-scss {
   width: 95%;
-  border: 4px solid #0dcaf0;
+  border: 4px solid  #B33771 ;
   margin-top: 10px;
 }
+
+.Skills .personal-skills .skill .pro .progress-ph{
+  width: 95%;
+  border: 4px solid #0dcaf0 ;
+  margin-top: 10px;
+}
+
+.Skills .personal-skills .skill .pro .progress-git{
+  width: 95%;
+  border: 4px solid #2c3e50 ;
+  margin-top: 10px;
+}
+
 
 /* ------------------------- skills section ends here ------------------------ */
 
@@ -580,22 +592,34 @@ ul {
   margin-top: 25px;
   transition: all .3s ease;
   background-color: #13202d;
-
- 
+  padding: 20px 1%; 
+  overflow: hidden;
+  z-index: 0;
+  border-radius: 5px;
 }
 
 .right .Services .service .ser h1 {
   text-align: center;
   font-size: 1rem;
   margin: 25px 0;
+  text-transform: uppercase;
+  font-weight: 400;
 }
 
 .right .Services .service .ser p {
   font-size: 0.8rem;
   line-height: 28px;
-  padding: 0 10px;
-  color: #ffff;
+    color: #ffff;
   margin-top: 18px;
+ 
+}
+
+.right .Services .service .ser:hover{
+  background-color: #198754;
+  color: #fff;
+  transform: scale(1.2);
+  z-index: 1;
+  /* text-shadow:2px 2px 5px #fff;  */
 }
 
 /* ------------------------- Services section ends here ------------------------ */
@@ -730,6 +754,7 @@ ul {
   background-color: #13202d;
   box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 20%);
   border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: outline 0.15s ease-in-out;  
 
 }
 
@@ -738,7 +763,9 @@ ul {
   color: #eeeeee;
   font-size: 0.9rem;
   padding-left: -0.8rem;
-  transition: ease;
+ 
+
+
 }
 
 .right .Contact form .name_email .name input:focus,
@@ -746,6 +773,7 @@ ul {
   outline: 4px solid #198754;
   color: #eeeeee;
   border: none;
+  
  }
 
  .right .Contact form .subjects{
@@ -770,6 +798,7 @@ ul {
   background-color: #13202d;
   box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 20%);
   border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: outline 0.15s ease-in-out;  
 }
 
 .right .Contact form .subjects  input::placeholder{
@@ -802,6 +831,7 @@ ul {
   background-color: #13202d;
   box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 25%);
   border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: outline 0.15s ease-in-out;  
  
 }
 
@@ -875,6 +905,16 @@ ul {
 /*------ right box ends here -------*/
 
 /*---------------------- Media quaries starts here ---------------*/
+
+@media only screen and (max-width: 1250px) {
+  .container .right {
+    margin-left: 30%;
+  }
+
+  .right .Services .service .ser {
+    padding: 15px 2%;
+}
+
 
 @media only screen and (max-width: 1200px) {
   html {
