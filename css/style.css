@@ -103,21 +103,34 @@ header nav ul li a {
   text-transform: uppercase;
   font-size: 0.9rem;
   font-weight: 600;
+  position: relative;
 
 }
 
 
+header nav ul li a::after{
+  content: "";
+  position: absolute;
+  bottom:-2px;
+  left: 0;
+  width:0%;
+  height: 2px;
+  background-color: #00b87b;
+  transition: all 0.3s ease;
 
+}
 
+header nav ul li a:hover::after{
+  width: 100%;
 
-
+}
 
 header nav ul li a:hover {
   color: #00b87b;
 
 }
 
-header nav ul li .active {
+header nav ul li .active-links {
   color: #00b87b; 
 }
 
@@ -220,6 +233,28 @@ ul {
   height: 100%;
 }
 
+.container .leftfixed .img-areas figure img {
+  border-radius: 50%;
+  width: 100%;
+  max-width: 200px;
+  margin-top: 90px;
+  border: 5px solid #00b87b;  
+  position: relative;
+}
+
+
+.container .leftfixed .img-areas figure img::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #00b87b;
+  display: inline-block;
+
+  border: 5px solid #eee; 
+}
 
 
 
@@ -348,11 +383,37 @@ ul {
   width: 100%;
 }
 
-.headings h1 {
+.headings h1 { 
   font-size: 2rem;
   line-height: 48px;
   font-weight: 600;
   margin-top: 1rem;
+  margin-bottom:1rem;
+  position: relative;
+}
+
+.headings h1::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom:-8px;
+  width: 100%;
+  max-width: 7px;
+  height: 7px;
+  border: 2px solid #eee;
+  border-radius: 10px;
+}
+
+.headings h1::after{ 
+  content: "";
+  position: absolute;
+  left: 15px;
+  bottom: -4px;
+  width: 100%;
+  max-width: 80px;
+  height: 2px;
+  background-color: #eee;
+ 
 }
 
 .container .right .About .summary {
@@ -655,6 +716,10 @@ ul {
   display: block; 
 }
 
+.right .Portfolio .projects .mein-box .live-pro{
+  height: 35vh; 
+}
+
 .projects .web .img-overlay{
   width: 100%;
   height: 100%;
@@ -709,47 +774,44 @@ ul {
 .right .Portfolio .projects .links a{
   font-size: 1rem;
   font-weight: 400;
-  color: #00b87b;
-  text-decoration: none;
-  transition: all 0.3s linear;
-  border: 1px solid #00b87b;
+  color: #eee;
+  text-decoration: none; 
+  border: 1px solid #198754; 
   width:100%; 
   margin: 0 auto; 
   text-align: center;
   display: inline-block;
   border-radius: 10px; 
   position: relative;
-  transition: all 0.4s cubic-bezier(.86, .01, .15, .99);
-}
+  transition: all 0.4s ease;
+  z-index: 999;
+
+} 
+
 
 .right .Portfolio .projects .links a::after{
- content: "";
- position: absolute;
- z-index: -1;
- top: 0px;
- left: 0px;
- right: 0px;
- bottom: 0;
- transition: 0.4s; 
-
-}
-
-.right .Portfolio .projects .links a::after:hover{
-  /* clip-path: inset(0 0 0 0); */
-}
-
-.right .Portfolio .projects .links a:hover { 
-  color: white;
-  background-color: #00b87b;
-	/* box-shadow: 0 0 0 4px rgba(250, 250, 250, 0.1) */
-}
-
-
-/* .right .Portfolio .projects .links:hover a{
+  content: "";
+  position: absolute; 
+  top:0;
+  left: 0; 
+  width:0;
+  border-radius: 10px; 
+  height:27px;
+  background-color: #198754;
+  border:none;
+  transition: all 0.4s ease; 
   color: #eee;
+  z-index:-99;
+ 
+
+}
+
+.right .Portfolio .projects .links a:hover::after{
   width: 100%;
-  background-color:#00b87b; 
-} */
+  border-radius: 10px;
+  border:none;
+ 
+}
 
 
 
@@ -1062,6 +1124,10 @@ ul {
   .container .right {
     padding: 0px 30px;   
   }
+
+  .right .Portfolio .projects .links {    
+    max-width: 130px;     
+}
  
  
 
@@ -1167,11 +1233,15 @@ ul {
 
 }
 
+.right .Portfolio .projects .links {
+  max-width: 120px;
+}
+
 }
 
 
 
-@media only screen and (max-width:572px){
+@media only screen and (max-width:575px){
 
   .container .leftfixed .buttons .btn {
     font-size: 0.9rem;
@@ -1187,6 +1257,10 @@ ul {
 
 .right .Portfolio .projects .mein-box {
   width: 100%;
+}
+
+.right .Portfolio .projects .links {
+  /* max-width: 120px; */
 }
   
 }
@@ -1208,6 +1282,10 @@ ul {
 
 .projects .web .img-overlay .box h1 {
   font-size: 1rem;
+}
+
+.right .Portfolio .projects .links {
+  max-width: 105px;
 }
 
 }
