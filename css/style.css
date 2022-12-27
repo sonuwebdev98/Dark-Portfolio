@@ -723,11 +723,12 @@ ul {
 
 .right .Portfolio .projects .links a::after{
  content: '';
- width:0;
+ width:50%;
  display: block; 
  position: absolute;
  top: 0;
  left: 0;
+ background-color: #00b87b;
 
 }
 
