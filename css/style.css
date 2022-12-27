@@ -120,7 +120,7 @@ header nav ul li a::after{
 
 }
 
-header nav ul li a:hover::after{
+header nav ul li a:hover::after{ 
   width: 100%;
 
 }
