@@ -694,6 +694,9 @@ ul {
 .right .Portfolio .projects .links{
   width: 100%;
   padding: 10px 0;
+  background-color:#00b87b;
+  color: #fff;
+
  }
 
 .right .Portfolio .projects .links a{
