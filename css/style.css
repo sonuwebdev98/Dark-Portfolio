@@ -116,13 +116,12 @@ header nav ul li a::after{
   width:0%;
   height: 2px;
   background-color: #00b87b;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease; 
 
 }
 
 header nav ul li a:hover::after{ 
-  width: 100%;
-
+  width: 100%; 
 }
 
 header nav ul li a:hover {
@@ -133,8 +132,6 @@ header nav ul li a:hover {
 header nav ul li .active-links {
   color: #00b87b; 
 }
-
-
 
 
 
@@ -163,7 +160,7 @@ header nav .nav-icon{
 
 .line1 {
   stroke-dasharray: 60 207;
-  stroke-width: 6;
+  stroke-width: 6;  
 }
 
 .line2 {
