@@ -567,6 +567,7 @@ ul {
 .container .right .Experience .knowledge {
   width: 100%;
   padding: 50px 0;
+ 
 }
 
 
@@ -597,7 +598,42 @@ ul {
   width: 99%;
   padding-left: 10px;
 
+}
 
+/* 2023  */
+.Experience .knowledge .journey .journey-edu{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+
+
+.Experience .knowledge .journey .journey-edu .jr-headline{
+  padding-left: 1rem;
+}
+
+.Experience .knowledge .journey .journey-edu  .jr-icon i{
+  font-size: 2.1rem;
+  color: #00b87b;
+}
+
+.Experience .knowledge .journey .jr-info{
+  margin-left: 0.9rem;
+  padding-top: 0.5rem;
+  padding-left: 2rem;
+  border-left: 1px solid #eee;
+}
+
+.Experience .knowledge .journey .jr-info p .mentor-links{
+  color: #00b87b;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.Experience .knowledge .journey .jr-info h5{
+  /* padding:0.5rem 0; */
 
 }
 
